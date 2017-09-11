@@ -1,0 +1,182 @@
+@font-face
+	font-family: 'Quicksand'
+	src: url('../fonts/Quicksand/Quicksand-Regular.ttf')
+
+$primary-color: #53A680
+$secondary-color: #FF8A43
+$third-color: #9FECF0
+
+
+=TriangleAndCircleRight()
+	&:before
+		content: ''
+		position: absolute
+		left: 100%
+		bottom: 10%
+		width: 0
+		height: 0
+		border-top: 1rem solid transparent
+		border-left: 2rem solid $primary-color
+		border-bottom: 1rem solid transparent
+
+	&:after
+		content: ''
+		position: absolute
+		width: 2rem
+		height: 2rem
+		left: calc(100% + 4rem)
+		bottom: 10%
+		background-color: $secondary-color
+		border-radius: 100%
+		transform: translate(-50%)
+		opacity: 0
+		transition-delay: 2s
+		transition: .1s
+
+=TriangleAndCircleLeft()
+	&:before
+		content: ''
+		position: absolute
+		right: 100%
+		bottom: 10%
+		width: 0
+		height: 0
+		border-top: 1rem solid transparent
+		border-right: 2rem solid $primary-color
+		border-bottom: 1rem solid transparent
+
+	&:after
+		content: ''
+		position: absolute
+		width: 2rem
+		height: 2rem
+		right: calc(100% + 4rem)
+		bottom: 10%
+		background-color: $secondary-color
+		border-radius: 100%
+		transform: translate(50%)
+		opacity: 0
+		transition-delay: 2s
+		transition: .1s
+
+
+html, body
+	margin: 0
+	padding: 0
+	font-family: 'Quicksand', sans-serif
+	background-color: $third-color
+	color: white
+	overflow-x: hidden
+
+header
+	height: 30vh
+	background-color: $primary-color
+
+	#headline
+		text-align: center
+		text-transform: uppercase
+		color: $secondary-color
+		line-height: 30vh
+		margin: 0
+		padding: 0
+		text-shadow: 5px 5px 2px rgba(0,0,0,.2)
+
+#page-container
+	position: relative
+	width: 80%
+	margin: 2rem auto
+	display: grid
+	grid-template-columns: 1fr 1fr
+	grid-gap: 8rem
+
+	#timeline
+		position: absolute
+		background-color: $secondary-color
+		width: 0.5rem
+		height: 100%
+		left: 50%
+		transform: translate(-50%)
+
+.tile
+	background-color: $primary-color
+	padding: 1rem
+	box-shadow: 5px 5px 10px rgba(0,0,0,.2)
+	transform: translate(-2000px)
+	transition: 1s
+	z-index: 2
+
+	&.start
+		transform: translate(0)
+
+		&:after
+			opacity: 1 !important
+
+.tile:nth-child(1)
+	position: relative
+	grid-column: 1
+	grid-row: 1
+
+	+TriangleAndCircleRight()
+
+.tile:nth-child(2)
+	position: relative
+	grid-column: 2
+	grid-row: 2
+
+	+TriangleAndCircleLeft()
+
+.tile:nth-child(3)
+	position: relative
+	grid-column: 1
+	grid-row: 3
+
+	+TriangleAndCircleRight()
+
+.tile:nth-child(4)
+	position: relative
+	grid-column: 2
+	grid-row: 4
+
+	+TriangleAndCircleLeft()
+
+.tile:nth-child(5)
+	position: relative
+	grid-column: 1
+	grid-row: 5
+
+	+TriangleAndCircleRight()
+
+.tile:nth-child(6)
+	position: relative
+	grid-column: 2
+	grid-row: 6
+
+	+TriangleAndCircleLeft()
+
+.tile:nth-child(7)
+	position: relative
+	grid-column: 1
+	grid-row: 7
+
+	+TriangleAndCircleRight()
+
+.tile:nth-child(8)
+	position: relative
+	grid-column: 2
+	grid-row: 8
+
+	+TriangleAndCircleLeft()
+
+.tile:nth-child(9)
+	position: relative
+	grid-column: 1
+	grid-row: 9
+
+	+TriangleAndCircleRight()
+
+.tile:nth-child(10)
+	position: relative
+	grid-column: 2
+	grid-row: 10
+
+	+TriangleAndCircleLeft()

@@ -1,0 +1,23 @@
+{
+  "name": "vertical-timeline",
+  "version": "1.0.0",
+  "description": "Vertical Timeline Exercice using Node-Sass",
+  "main": "index.html",
+  "scripts": {
+		"sass": "node-sass --watch assets/sass/main.sass assets/css/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RQMplays/VerticalTimeline.git"
+  },
+  "author": "RQM-",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RQMplays/VerticalTimeline/issues"
+  },
+  "homepage": "https://github.com/RQMplays/VerticalTimeline#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
+}
