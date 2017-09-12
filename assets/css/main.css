@@ -11,13 +11,29 @@ html, body {
   overflow-x: hidden; }
 
 header {
-  height: 30vh;
-  background-color: #53A680; }
+  height: 50vh;
+  background-color: #53A680;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 6rem;
+  position: relative; }
+  header:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+    border-left: 100px solid transparent;
+    border-top: 40px solid #53A680;
+    border-right: 100px solid transparent;
+    z-index: 2; }
   header #headline {
     text-align: center;
     text-transform: uppercase;
     color: #FF8A43;
-    line-height: 30vh;
+    font-size: 4rem;
+    line-height: 50vh;
     margin: 0;
     padding: 0;
     text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2); }
