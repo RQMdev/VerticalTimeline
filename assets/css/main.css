@@ -46,14 +46,12 @@ header {
   z-index: 2; }
   .tile.start {
     transform: translate(0); }
-    .tile.start:after {
-      opacity: 1 !important; }
 
 .tile:nth-child(1) {
   position: relative;
   grid-column: 1;
   grid-row: 1; }
-  .tile:nth-child(1):before {
+  .tile:nth-child(1)::before {
     content: '';
     position: absolute;
     left: 100%;
@@ -63,7 +61,7 @@ header {
     border-top: 1rem solid transparent;
     border-left: 2rem solid #53A680;
     border-bottom: 1rem solid transparent; }
-  .tile:nth-child(1):after {
+  .tile:nth-child(1)::after {
     content: '';
     position: absolute;
     width: 2rem;
@@ -76,12 +74,14 @@ header {
     opacity: 0;
     transition-delay: 2s;
     transition: .1s; }
+  .tile:nth-child(1).start::after {
+    animation: dotLeft 2s ease forwards; }
 
 .tile:nth-child(2) {
   position: relative;
   grid-column: 2;
   grid-row: 2; }
-  .tile:nth-child(2):before {
+  .tile:nth-child(2)::before {
     content: '';
     position: absolute;
     right: 100%;
@@ -91,7 +91,7 @@ header {
     border-top: 1rem solid transparent;
     border-right: 2rem solid #53A680;
     border-bottom: 1rem solid transparent; }
-  .tile:nth-child(2):after {
+  .tile:nth-child(2)::after {
     content: '';
     position: absolute;
     width: 2rem;
@@ -104,12 +104,14 @@ header {
     opacity: 0;
     transition-delay: 2s;
     transition: .1s; }
+  .tile:nth-child(2).start::after {
+    animation: dotRight 2s ease forwards; }
 
 .tile:nth-child(3) {
   position: relative;
   grid-column: 1;
   grid-row: 3; }
-  .tile:nth-child(3):before {
+  .tile:nth-child(3)::before {
     content: '';
     position: absolute;
     left: 100%;
@@ -119,7 +121,7 @@ header {
     border-top: 1rem solid transparent;
     border-left: 2rem solid #53A680;
     border-bottom: 1rem solid transparent; }
-  .tile:nth-child(3):after {
+  .tile:nth-child(3)::after {
     content: '';
     position: absolute;
     width: 2rem;
@@ -132,12 +134,14 @@ header {
     opacity: 0;
     transition-delay: 2s;
     transition: .1s; }
+  .tile:nth-child(3).start::after {
+    animation: dotLeft 2s ease forwards; }
 
 .tile:nth-child(4) {
   position: relative;
   grid-column: 2;
   grid-row: 4; }
-  .tile:nth-child(4):before {
+  .tile:nth-child(4)::before {
     content: '';
     position: absolute;
     right: 100%;
@@ -147,7 +151,7 @@ header {
     border-top: 1rem solid transparent;
     border-right: 2rem solid #53A680;
     border-bottom: 1rem solid transparent; }
-  .tile:nth-child(4):after {
+  .tile:nth-child(4)::after {
     content: '';
     position: absolute;
     width: 2rem;
@@ -160,12 +164,14 @@ header {
     opacity: 0;
     transition-delay: 2s;
     transition: .1s; }
+  .tile:nth-child(4).start::after {
+    animation: dotRight 2s ease forwards; }
 
 .tile:nth-child(5) {
   position: relative;
   grid-column: 1;
   grid-row: 5; }
-  .tile:nth-child(5):before {
+  .tile:nth-child(5)::before {
     content: '';
     position: absolute;
     left: 100%;
@@ -175,7 +181,7 @@ header {
     border-top: 1rem solid transparent;
     border-left: 2rem solid #53A680;
     border-bottom: 1rem solid transparent; }
-  .tile:nth-child(5):after {
+  .tile:nth-child(5)::after {
     content: '';
     position: absolute;
     width: 2rem;
@@ -188,12 +194,14 @@ header {
     opacity: 0;
     transition-delay: 2s;
     transition: .1s; }
+  .tile:nth-child(5).start::after {
+    animation: dotLeft 2s ease forwards; }
 
 .tile:nth-child(6) {
   position: relative;
   grid-column: 2;
   grid-row: 6; }
-  .tile:nth-child(6):before {
+  .tile:nth-child(6)::before {
     content: '';
     position: absolute;
     right: 100%;
@@ -203,7 +211,7 @@ header {
     border-top: 1rem solid transparent;
     border-right: 2rem solid #53A680;
     border-bottom: 1rem solid transparent; }
-  .tile:nth-child(6):after {
+  .tile:nth-child(6)::after {
     content: '';
     position: absolute;
     width: 2rem;
@@ -216,12 +224,14 @@ header {
     opacity: 0;
     transition-delay: 2s;
     transition: .1s; }
+  .tile:nth-child(6).start::after {
+    animation: dotRight 2s ease forwards; }
 
 .tile:nth-child(7) {
   position: relative;
   grid-column: 1;
   grid-row: 7; }
-  .tile:nth-child(7):before {
+  .tile:nth-child(7)::before {
     content: '';
     position: absolute;
     left: 100%;
@@ -231,7 +241,7 @@ header {
     border-top: 1rem solid transparent;
     border-left: 2rem solid #53A680;
     border-bottom: 1rem solid transparent; }
-  .tile:nth-child(7):after {
+  .tile:nth-child(7)::after {
     content: '';
     position: absolute;
     width: 2rem;
@@ -244,12 +254,14 @@ header {
     opacity: 0;
     transition-delay: 2s;
     transition: .1s; }
+  .tile:nth-child(7).start::after {
+    animation: dotLeft 2s ease forwards; }
 
 .tile:nth-child(8) {
   position: relative;
   grid-column: 2;
   grid-row: 8; }
-  .tile:nth-child(8):before {
+  .tile:nth-child(8)::before {
     content: '';
     position: absolute;
     right: 100%;
@@ -259,7 +271,7 @@ header {
     border-top: 1rem solid transparent;
     border-right: 2rem solid #53A680;
     border-bottom: 1rem solid transparent; }
-  .tile:nth-child(8):after {
+  .tile:nth-child(8)::after {
     content: '';
     position: absolute;
     width: 2rem;
@@ -272,12 +284,14 @@ header {
     opacity: 0;
     transition-delay: 2s;
     transition: .1s; }
+  .tile:nth-child(8).start::after {
+    animation: dotRight 2s ease forwards; }
 
 .tile:nth-child(9) {
   position: relative;
   grid-column: 1;
   grid-row: 9; }
-  .tile:nth-child(9):before {
+  .tile:nth-child(9)::before {
     content: '';
     position: absolute;
     left: 100%;
@@ -287,7 +301,7 @@ header {
     border-top: 1rem solid transparent;
     border-left: 2rem solid #53A680;
     border-bottom: 1rem solid transparent; }
-  .tile:nth-child(9):after {
+  .tile:nth-child(9)::after {
     content: '';
     position: absolute;
     width: 2rem;
@@ -300,12 +314,14 @@ header {
     opacity: 0;
     transition-delay: 2s;
     transition: .1s; }
+  .tile:nth-child(9).start::after {
+    animation: dotLeft 2s ease forwards; }
 
 .tile:nth-child(10) {
   position: relative;
   grid-column: 2;
   grid-row: 10; }
-  .tile:nth-child(10):before {
+  .tile:nth-child(10)::before {
     content: '';
     position: absolute;
     right: 100%;
@@ -315,7 +331,7 @@ header {
     border-top: 1rem solid transparent;
     border-right: 2rem solid #53A680;
     border-bottom: 1rem solid transparent; }
-  .tile:nth-child(10):after {
+  .tile:nth-child(10)::after {
     content: '';
     position: absolute;
     width: 2rem;
@@ -328,3 +344,33 @@ header {
     opacity: 0;
     transition-delay: 2s;
     transition: .1s; }
+  .tile:nth-child(10).start::after {
+    animation: dotRight 2s ease forwards; }
+
+@keyframes dotLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-50%) scale(0); }
+  49% {
+    opacity: 0;
+    transform: translate(-50%) scale(0); }
+  50% {
+    opacity: 1;
+    transform: translate(-50%) scale(0); }
+  100% {
+    opacity: 1;
+    transform: translate(-50%) scale(1); } }
+
+@keyframes dotRight {
+  0% {
+    opacity: 0;
+    transform: translate(50%) scale(0); }
+  49% {
+    opacity: 0;
+    transform: translate(50%) scale(0); }
+  50% {
+    opacity: 1;
+    transform: translate(50%) scale(0); }
+  100% {
+    opacity: 1;
+    transform: translate(50%) scale(1); } }
